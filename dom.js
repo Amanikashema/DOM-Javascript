@@ -53,3 +53,22 @@ item.style.color = 'red'
 
 let lastitem = document.querySelector('.list-group-item:last-child')
 lastitem.style.backgroundColor = 'Green'
+
+// Event listening
+
+let button = document.querySelector('#button').addEventListener('click',
+buttonClick)
+
+function buttonClick(e){
+   // console.log('button clicked')
+//    document.querySelector('#header-title').textContent = "Changed"
+//    document.getElementById('main').style.backgroundColor = 'Brown'
+   let output = document.getElementById('output')
+   output.innerHTML = '<h2>' + e.target.id +'</h2>'
+   
+}
+
+function runEvent(e){
+   console.log('EVENT TYPE: '+ e.type)
+   
+}
